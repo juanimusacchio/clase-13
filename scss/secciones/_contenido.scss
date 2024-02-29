@@ -1,0 +1,37 @@
+.main {
+    background-image: linear-gradient(to top, rgb(11, 11, 11), rgba(18, 16, 14, 0.732));
+    min-height: 78vh;
+
+    h1 {
+        text-align: center;
+        font-family: $fuente-titulo;
+        padding: 10px;
+    }
+
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .seccion-uno {
+            border: solid $azul 3px;
+            max-width: 350px;
+            background-color: aqua;
+
+        }
+
+        .seccion-dos {
+            width: 350px;
+            border: solid $azul 3px;
+            background-color: darkgoldenrod;
+        }
+
+        .seccion-tres {
+            width: 350px;
+            border: solid $azul 3px;
+            background-color: crimson;
+
+
+        }
+    }
+}
