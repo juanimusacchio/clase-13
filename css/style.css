@@ -10,6 +10,12 @@
   color: #fdfffc;
   width: 50%; }
 
+@keyframes latido {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+
 header {
   background-color: #C01A7D; }
   header ul {
@@ -47,11 +53,29 @@ header {
     .main .articulos .seccion-dos {
       width: 350px;
       border: solid #011627 3px;
-      background-color: darkgoldenrod; }
+      background-color: darkgoldenrod;
+      animation-timing-function: ease-in-out; }
+      .main .articulos .seccion-dos h3 {
+        animation-name: latido;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; }
     .main .articulos .seccion-tres {
+      display: flex;
+      flex-direction: column;
       width: 350px;
       border: solid #011627 3px;
       background-color: crimson; }
+      .main .articulos .seccion-tres form {
+        display: flex;
+        flex-direction: column; }
+        .main .articulos .seccion-tres form input {
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+          transition: .3s ease-in-out; }
+          .main .articulos .seccion-tres form input:focus {
+            background-color: burlywood;
+            transform: scale(2); }
 
 footer {
   background-color: #C01A7D; }
